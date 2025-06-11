@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--标题-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/app_color">
+
+        <ImageButton
+            android:id="@+id/btn_nav_sub"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@color/transparent"
+            android:src="@drawable/back_button"
+            android:scaleType="centerInside"/>
+
+        <TextView
+            android:id="@+id/tv_titlebar_sub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:shadowColor="#ff000000"
+            android:shadowDx="3.0"
+            android:shadowDy="3.0"
+            android:shadowRadius="3.0"
+            android:text="测评能力图谱"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ffffff" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/root"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="gone"
+        android:orientation="vertical" />
+
+    <com.iyuba.concept2.util.MyPolygonView
+
+        android:id="@+id/muPolygonView"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center_horizontal"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+            <!--图片大小180*68 -->
+            <Button
+                android:id="@+id/btn_ability_words"
+                style="@style/AbilityTestButtonStyle"
+                android:background="@drawable/btn_bg_ability_word" />
+
+            <Button
+                android:id="@+id/btn_ability_grammer"
+                style="@style/AbilityTestButtonStyle"
+                android:background="@drawable/btn_bg_ability_grammer" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_ability_listen"
+                style="@style/AbilityTestButtonStyle"
+                android:background="@drawable/btn_bg_ability_listen" />
+
+            <Button
+                android:id="@+id/btn_ability_spoken"
+                style="@style/AbilityTestButtonStyle"
+                android:background="@drawable/btn_bg_ability_speak" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_ability_read"
+                style="@style/AbilityTestButtonStyle"
+                android:background="@drawable/btn_bg_ability_read" />
+
+            <Button
+                android:id="@+id/btn_ability_write"
+                style="@style/AbilityTestButtonStyle"
+                android:background="@drawable/btn_bg_ability_write" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

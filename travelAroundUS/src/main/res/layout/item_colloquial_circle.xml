@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/dp_4"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dp_4">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_72"
+        android:layout_margin="@dimen/dp_4"
+        android:descendantFocusability="blocksDescendants"
+        android:padding="@dimen/dp_4">
+
+        <ImageView
+            android:id="@+id/item_circle_voice"
+            android:layout_width="60dp"
+            android:layout_height="22dp"
+            android:layout_alignBottom="@+id/head_img"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@+id/head_img"
+            android:src="@drawable/playing_audio_comment" />
+
+        <TextView
+            android:id="@+id/tv_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@+id/head_img"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="用户名"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_16" />
+
+        <TextView
+            android:id="@+id/tv_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/head_img"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/item_circle_voice"
+            android:text="0分"
+            android:textColor="@color/blue"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/publish_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv_score"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="@dimen/dp_4"
+            android:gravity="center_vertical"
+            android:text="2019-01-25" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/head_img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginBottom="6dp"
+            app:shapeAppearance="@style/CircleStyle" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items>
+    <item
+        name="本应用会员1个月"
+        month="1"
+        price="25"
+        productId="10"/>
+    <item
+        name="本应用会员6个月"
+        month="6"
+        price="69"
+        productId="10"/>
+    <item
+        name="本应用会员12个月"
+        month="12"
+        price="99"
+        productId="10"/>
+    <item
+        name="本应用会员36个月"
+        month="36"
+        price="199"
+        productId="10"/>
+</items>

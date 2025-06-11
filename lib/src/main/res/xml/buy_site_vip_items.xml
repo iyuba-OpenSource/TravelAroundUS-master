@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items>
+    <item
+        name="全站会员1个月"
+        month="1"
+        price="50"
+        productId="0"/>
+    <item
+        name="全站会员6个月"
+        month="6"
+        price="198"
+        productId="0"/>
+    <item
+        name="全站会员12个月"
+        month="12"
+        price="298"
+        productId="0"/>
+    <item
+        name="全站会员36个月"
+        month="36"
+        price="588"
+        productId="0"/>
+</items>

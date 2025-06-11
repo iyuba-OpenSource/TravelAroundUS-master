@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:roundProgress="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/backlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F4F4">
+
+
+    <RelativeLayout
+        android:id="@+id/no_exercise_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:paddingBottom="15dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/sorry_face"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/no_test" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sorry_face"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="本篇暂未提供试题"
+            android:textColor="#414141"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/start_exercise_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:visibility="invisible">
+
+        <ImageView
+            android:id="@+id/start_exercise"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/start_exercise" />
+    </RelativeLayout>
+
+
+    <!--做题view-->
+    <RelativeLayout
+        android:id="@+id/exercise_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp">
+
+        <!--
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true">
+            <Button
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_margin="8dp"
+                android:layout_gravity="center"
+                android:id="@+id/former_question"
+                android:background="@drawable/former_question"
+            />
+        </LinearLayout>
+         -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/test_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="选择题"
+                    android:textColor="#333333"
+                    android:textSize="15sp" />
+
+                <Chronometer
+                    android:id="@+id/timer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/test_type"
+                    android:format="00:00:00"
+                    android:textSize="15sp"
+                    android:visibility="visible"
+                    android:drawablePadding="5dp"
+                    android:drawableLeft="@drawable/image_timer"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/question_index"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:lineSpacingMultiplier="1.3"
+                    android:text="1."
+                    android:textColor="#333333"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/question_body"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:minLines="2"
+                    android:text="What is the reason for upcoming closure?"
+                    android:textColor="#333333"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <ScrollView
+                android:id="@+id/select_question"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="15dp"
+
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/answer_a"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/answer_a_icon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="A."
+                            android:textColor="#000000"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/answer_a_text"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10dp"
+                            android:text="A.bad service"
+                            android:textColor="#000000"
+                            android:textSize="15sp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/answer_b"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/answer_b_icon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="B."
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/answer_b_text"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="4dp"
+                            android:text="fierce competition"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/answer_c"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/answer_c_icon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="C. "
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/answer_c_text"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="center_vertical"
+                            android:text="increased rent requirment by the federal fierce competition"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/answer_d"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/answer_d_icon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="D. "
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/answer_d_text"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:text="low performance"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="15dp">
+
+
+                        <LinearLayout
+                            android:id="@+id/question"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:gravity="center_horizontal">
+
+                            <TextView
+                                android:id="@+id/former_question_button"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="30dp"
+                                android:layout_toLeftOf="@+id/space"
+                                android:background="@drawable/multiple_fomer_bg"
+                                android:paddingBottom="10dp"
+                                android:paddingLeft="20dp"
+                                android:paddingRight="20dp"
+                                android:paddingTop="10dp"
+                                android:text="上一题"
+                                android:textColor="@color/white"
+                                android:textSize="15sp" />
+
+
+                            <TextView
+                                android:id="@+id/next_question_button"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="30dp"
+                                android:layout_toRightOf="@id/space"
+                                android:background="@drawable/multiple_fomer_bg"
+                                android:paddingBottom="10dp"
+                                android:paddingLeft="20dp"
+                                android:paddingRight="20dp"
+                                android:paddingTop="10dp"
+                                android:text="下一题"
+                                android:textColor="@color/white"
+                                android:textSize="15sp" />
+
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/result"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/question"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginRight="30dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/multiple_fomer_bg"
+                            android:gravity="center"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:paddingTop="10dp"
+                            android:text="提交答案"
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
+
+                        <!--
+                     <RelativeLayout
+                         android:id="@+id/former_question"
+                         android:layout_toLeftOf="@id/next_question"
+                         android:layout_width="60dp"
+                         android:layout_height="23dp"
+                         android:layout_marginRight="15dp"
+                         android:gravity="center"
+                          >
+                         <Button
+                             android:id="@+id/former_question_button"
+                             android:layout_width="60dp"
+                             android:layout_height="23dp"
+                             android:layout_gravity="center"
+                             android:background="@drawable/former_question_normal"
+                             />
+                     </RelativeLayout>
+                      -->
+
+                        <ImageView
+                            android:id="@+id/back"
+                            android:layout_width="60dp"
+                            android:layout_height="23dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="15dp"
+                            android:background="@drawable/turn_back"
+                            android:visibility="invisible"
+                            tools:visibility="visible" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </ScrollView>
+
+            <com.iyuba.concept2.widget.indicator.ExercisePageIndicator
+                android:id="@+id/pageIndicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+
+
+        </LinearLayout>
+
+        <!--
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true">
+            <Button
+                android:layout_width="20dp"
+                android:layout_height="64dp"
+                android:layout_margin="8dp"
+                android:layout_gravity="center"
+                android:id="@+id/next_question"
+                android:background="@drawable/next_question"
+                />
+        </LinearLayout>
+         -->
+    </RelativeLayout>
+    <!--做题view-->
+
+    <RelativeLayout
+        android:id="@+id/result_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <ImageView
+            android:id="@+id/image_result"
+            android:layout_width="230dp"
+            android:layout_height="35dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/image_result" />
+
+        <LinearLayout
+            android:id="@+id/result_pic"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <com.iyuba.core.common.widget.RoundProgressBar xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/result_round_bar"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:background="@drawable/result"
+                roundProgress:circleColor="#D8D8D8"
+                roundProgress:circleProgressColor="@color/blue"
+                roundProgress:circleWidth="17dip"
+                roundProgress:textColor="#ffffffff"
+                roundProgress:textIsDisplayable="false" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/scroll"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image_result"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="30dp"
+            android:visibility="visible"
+            android:background="@drawable/image_listview">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+
+                <RelativeLayout
+                    android:id="@+id/result_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/question_sum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="题目数"
+                        android:textColor="#666666"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/right_rate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/question_sum"
+                        android:layout_alignRight="@id/question_sum"
+                        android:layout_below="@id/question_sum"
+                        android:layout_marginTop="5dp"
+                        android:text="正确率"
+                        android:textColor="#666666"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/test_spendtime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/right_rate"
+                        android:layout_alignRight="@id/right_rate"
+                        android:layout_below="@id/right_rate"
+                        android:layout_marginTop="5dp"
+                        android:text="用  时"
+                        android:textColor="#666666"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/question_sum_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@id/question_sum"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@id/question_sum"
+                        android:text=": 3题 "
+                        android:textColor="#666666"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/right_rate_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@id/right_rate"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@id/right_rate"
+                        android:text=": 33%"
+                        android:textColor="#666666"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/test_spendtime_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@id/test_spendtime"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@id/test_spendtime"
+                        android:text=": 34分28秒"
+                        android:textColor="#666666"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#F5F4F4" />
+
+                <ListView
+                    android:scrollbars="none"
+                    android:id="@+id/result_listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="30dp"
+                    android:listSelector="#00000000"
+                    android:layout_marginBottom="10dp"/>
+                <TextView
+                    android:id="@+id/redo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="@dimen/dp_40"
+                    android:background="@drawable/multiple_fomer_bg"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/white"
+                    android:text="重做"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/septal_line"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="3dp"
+            android:layout_below="@id/image_result"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/septal_line" />
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/septal_line"
+            android:layout_marginTop="20dp">
+
+            <com.iyuba.concept2.widget.components.ResultTextViews
+                android:id="@+id/result_textviews"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </ScrollView>
+    </RelativeLayout>
+</RelativeLayout>

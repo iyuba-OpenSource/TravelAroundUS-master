@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tv_word"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="dog"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"/>
+    <ImageButton
+        android:id="@+id/ib_collect"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:background="#00000000"
+        android:src="@drawable/headline_collect_not"
+        android:padding="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"/>
+    <ImageButton
+        android:id="@+id/ib_en_play"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="#00000000"
+        android:src="@drawable/qsound_normal"
+        android:scaleType="centerCrop"
+        android:layout_below="@id/tv_word"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:padding="5dp"/>
+
+    <TextView
+        android:id="@+id/tv_en_Phonetic_symbol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/ib_en_play"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/ib_en_play"
+        android:text="英/d g/"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/ib_us_play"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:padding="5dp"
+        android:background="#00000000"
+        android:src="@drawable/qsound_normal"
+        android:scaleType="centerCrop"
+        android:layout_alignTop="@id/ib_en_play"
+        android:layout_toRightOf="@id/tv_en_Phonetic_symbol"
+        android:layout_marginLeft="40dp"/>
+
+    <TextView
+        android:id="@+id/tv_us_Phonetic_symbol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/ib_en_play"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/ib_us_play"
+        android:text="美/d g/"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/tv_explain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="这是注解，这是注解，这是注解，这是注解，这是注解，这是注解，这是注解，这是注解，这是注解，"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:layout_below="@id/ib_en_play"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:paddingBottom="5dp"
+        />
+</RelativeLayout>

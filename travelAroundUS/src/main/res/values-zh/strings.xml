@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="help_use_name">使用帮助</string>
+	<string name="main_name">主函数</string>
+    <string name="study_name">学习</string>
+    <string name="lesson_word_name">课文单词</string>
+    <string name="lesson_annotation_name">课文注释</string>
+    <string name="lesson_structure_name">重点句型</string>
+    <string name="lesson_diffculty_name">课文难点</string>
+    <string name="book_choose_name">课本选择</string>
+    <string name="multiple_choice_name">单项选择</string>
+    <!-- 中文 -->
+    <string name="app_name">@string/app_name_main</string>
+    <!--<string name="app_name">走遍美国</string>-->
+    <!--<string name="app_name">新概念英语全四册</string>-->
+    <!--这是关键！！-->
+    <string name="play_check_network">请检查网络是否可用！</string>
+    <string name="alert_btn_ok">确定</string>
+    <string name="setting_title">设置</string>
+    <string name="alert">提示</string>
+    <!-- 下拉刷新相关字符资源 -->
+    <string name="pull_to_refresh_pull_label">下拉刷新...</string>
+    <string name="pull_to_refresh_release_label">松开刷新...</string>
+    <string name="pull_to_refresh_on_refreshing">正在刷新...</string>
+    <string name="pull_to_refresh_lastest">最新更新:</string>
+
+    <!-- alert窗口相关字符资源 -->
+    <string name="alert_title">提示</string>
+    <string name="alert_exit_content">正在下载中，确定退出应用？</string>
+
+    <string name="alert_net_content">网络未连接</string>
+    <string name="alert_btn_exit">退出</string>
+    <string name="alert_btn_buy">购买</string>
+    <string name="alert_btn_cancel">取消</string>
+
+    <!-- 关于界面相关字符资源 -->
+    <string name="about_title">关于</string>
+    <string name="about_update_alert_1">当前有新版本更新：</string>
+    <string name="about_update_alert_2">,是否要更新？</string>
+    <string name="about_error">服务器忙！请稍后下载！</string>
+    <string name="about_update_isnew">走遍美国已经是最新版本</string>
+    <string name="about_version">软件版本 :</string>
+
+    <!-- 播放器页面相关字符资源 -->
+    <string name="play_please_take_the_word">请取英文单词</string>
+    <string name="play_no_word_interpretation">当前单词未找到释义！</string>
+    <string name="no_search_word">不存在你要查询的单词！</string>
+    <string name="play_ins_new_word_success">成功加入生词本！</string>
+    <string name="word_add">添加</string>
+	 <string name="word_close">关闭</string>
+
+    <!-- 分类界面相关字符资源 -->
+    <string name="category_check_network">请检查网络是否可用！</string>
+
+    <!-- 本地收藏界面相关字符资源 -->
+
+    <!-- 意见反馈界面相关字符资源 -->
+    <string name="feedback_title">意见反馈</string>
+    <string name="feedback_info">您反馈的问题和建议，将是我们进步的动力！</string>
+    <string name="feedback_contact">联系方式（有效的邮箱地址）</string>
+    <string name="feedback_info_title">反馈或建议</string>
+    <string name="feedback_contact_title">联系方式</string>
+    <string name="feedback_submit_success">意见反馈已提交！</string>
+    <string name="feedback_info_null">反馈信息不能为空！</string>
+    <string name="feedback_email_null">请填写email！</string>
+    <string name="feedback_effective_email">请填写有效的email！</string>
+    <string name="feedback_network_error">网络错误，未能提交反馈！</string>
+    <string name="feedback_submitting">提交中，请稍后！</string>
+
+    <!-- 用户登录界面相关字符资源 -->
+
+
+    <!-- 更多按钮布局相关字符资源 -->
+    <!-- 最新列表界面相关字符资源 -->
+
+    <!-- 空间界面相关字符资源 -->
+
+    <!-- 空间界面相关字符资源 -->
+
+    <!-- 注册界面相关字符资源 -->
+
+    <!-- 设置界面相关字符资源 -->
+    <string name="setting_app_all">更多应用</string>
+    <string name="setting_sleep_state_off">关</string>
+	<string name="setting_sleep_slecttime">请设置时间</string>
+	<string name="setting_sleep_explain">例如设置"30"则代表30分钟之后停止播放</string>
+	<string name="setting_wakeup">听力闹钟</string>
+	<string name="setting_wakeup_explain">设置闹钟的响铃时间</string>
+    <string name="setting_auto_notice_info1">亲爱的用户</string>
+	 <string name="setting_auto_notice_info2">又有新文章啦</string>
+	 <string name="setting_auto_notice_info3">最近更新:</string>
+	 <string name="setting_auto_notice_info4">篇</string>
+	 <string name="setting_auto_notice_info5">等</string>
+	 <string name="setting_auto_notice_info6">共</string>
+    <string name="setting_file_path">选择存储路径</string>
+	 <string name="setting_file_path_ask">存储位置发生改变，是否将原下载的文章迁移到新地址？</string>
+	 <string name="setting_file_path_moving">正在迁移中，请稍候。</string>
+
+    <!-- 生词本界面相关字符资源 -->
+    <string name="send">发送</string>
+    <string name="submit">提交</string>
+    <string name="reply">回复</string>
+    <string name="complete">完成</string>
+    <string name="login">登录</string>
+
+    <!-- VIP -->
+    <!-- dialog -->
+    <!-- info -->
+    <string name="high_speed_download_toast">您好，只有vip用户，才能拥有高速下载权限！ </string>
+    <!-- newword -->
+    <!-- Personhome -->
+    <!-- Regist -->
+    <!-- setting_main -->
+    <string name="setting_deleting">后台自动删除中……</string>
+    <string name="setting_alert">一旦删除，已收藏的本地音频无法再离线收听。\n确定要继续么?</string>
+    <string name="setting_del_fail">删除失败</string>
+    <!-- uploadimage -->
+    <!-- study -->
+    <string name="study_info1">网络异常，无法加载</string>
+    <string name="study_info2">您当前是2G网络，播放的流畅度不高\n建议您连接wifi或者下载之后播放</string>
+    <string name="study_info4">网络异常，转入本地播放</string>
+    <string name="study_recording">开始录音</string>
+    <string name="study_input_comment">请输入评论内容</string>
+    <string name="study_info">我正在使用爱语吧走遍美国，学习第一册第1课《</string>
+    <string name="study_play_record">播放录音</string>
+    <string name="study_on_load">正在加载...</string>
+    <string name="study_follow">顺序播放</string>
+    <string name="study_random">随机播放</string>
+    <string name="study_repeatone">单曲循环</string>
+    <string name="study_ab_a">开始记录A-，再次点击即可区间播放</string>
+    <string name="study_ab_b">开始播放A-B</string>
+    <string name="study_first">当前已经是第一句！</string>
+    <string name="study_last">当前已经是最后一句！</string>
+    <string name="study_vipdownload">尊敬的VIP用户，您将享受10倍于普通用户的下载带宽</string>
+    <!-- writemail -->
+
+    <!-- newlistadapter -->
+    <string name="nladapter_notvip">您当前不是vip，本地下载限制数目为10篇\n您可以删除已听过的音频或购买vip</string>
+    <!-- wordlistadapter -->
+    <!-- accountmanager -->
+    <!-- waiting -->
+
+    <!-- unvip -->
+    <!-- head -->
+    <string name="last_update">上次更新</string>
+    <!-- hint -->
+    <string name="hint1">说点什么吧...</string>
+
+    <!-- 文件浏览器 -->
+    
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="confirm_exit">确认退出程序？</string>
+	<string name="mainmenu_home">主目录</string>
+	<string name="mainmenu_refresh">刷新</string>
+	<string name="mainmenu_createdir">新建文件夹</string>
+	<string name="mainmenu_exit">保存/返回应用</string>
+	<string name="mainmenu_path_save">保存</string>
+	<string name="mainmenu_exitnow">返回应用</string>
+    <string name="file_rename">重命名</string>
+	<string name="file_delete">删除</string>
+	<string name="file_info">详情</string>
+	<string name="file_cannotopen">无法打开: %1$s</string>
+	<string name="file_exists">文件已存在！</string>
+	<string name="file_namecannotempty">文件名不能为空</string>
+	<string name="file_create_fail">创建文件失败！</string>
+	<string name="file_rename_fail">重命名失败！</string>
+	<string name="file_name">文件名</string>
+	<string name="file_size">大小</string>
+	<string name="file_contents">内容</string>
+	<string name="file_lastmodified">最后修改时间</string>
+	<string name="file_paste">粘贴</string>
+	<string name="file_copy">复制</string>
+	<string name="file_move">移动</string>
+	<string name="file_create">新建</string>
+	<string name="file_copy_fail">复制文件失败！</string>
+	<string name="file_move_fail">移动文件失败！</string>
+	<string name="file_notexists">文件不存在！</string>
+	<string name="file_path_ro">此文件夹为只读类型，请您选择其他的路径进行存储。</string>
+	<string name="file_path_move_success">迁移成功</string>
+	<string name="file_path_move_exception">迁移过程中有异常，请您重新选择文件夹或手动迁移</string>
+
+
+    <string name="social_load_more">加载更多</string>
+
+    <string name="submit_result">是否提交选择题答案？</string>
+
+    <!-- 学习成绩统计 -->
+
+    <!-- LessonStructureExercise  -->
+    <string name="has_no_answer">当前题目没有答案！</string>
+
+    <string name="pic">欢迎使用走遍美国！</string>
+    
+    <!-- main.xml -->
+    <string name="home_text">首页</string>
+    <!--<string name="money_tips">设置</string>-->
+
+
+
+</resources>

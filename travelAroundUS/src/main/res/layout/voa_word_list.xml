@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/backlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_color" >
+    
+    <ListView 
+        android:id="@+id/wordslist"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="#00000000"
+        android:divider="#dcdcdc"
+        android:dividerHeight="1dp"
+        android:visibility="visible"
+        >
+    </ListView>
+    
+    <RelativeLayout 
+        android:id="@+id/word_detail"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="20dp"
+        android:visibility="gone"
+        >
+        <RelativeLayout 
+	        android:id="@+id/button_layout"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentBottom="true"
+	        android:layout_marginBottom="30dp"
+	        >
+	            <Button
+	             android:id="@+id/back_tolist"
+	             android:layout_width="60dp"
+	             android:layout_height="40dp"
+	             android:layout_marginTop="10dp"
+	             android:background="@drawable/button_gray"
+	             android:textSize="18sp"
+	             android:text="返回列表"/>
+		         <LinearLayout 
+		        	 android:layout_width="wrap_content"
+		       	 	 android:layout_height="wrap_content"
+		       		 android:orientation="horizontal"
+		       		 android:layout_gravity="right"
+		       		 android:layout_marginTop="10dp"
+		     		 android:layout_alignParentRight="true"
+		       		 >
+			        
+			        <Button 
+			            android:layout_width="40dp"
+			            android:layout_height="40dp"
+			            android:id="@+id/former_voaword"
+			            android:background="@drawable/former_word"
+			           />
+			        <Button 
+			            android:layout_width="40dp"
+			            android:layout_height="40dp"
+			            android:layout_marginLeft="50dp"
+			            android:id="@+id/next_voaword"
+			            android:background="@drawable/next_word"
+			           />
+		        
+		    	</LinearLayout>
+	       </RelativeLayout>
+        
+        <TextView 
+            android:id="@+id/word_self"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="word"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            />
+         <TextView 
+            android:id="@+id/word_pron"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/word_self"
+            android:layout_alignBottom="@id/word_self"
+            android:text="word"
+            android:textSize="18sp"
+            android:textColor="#4d494d"
+            android:layout_marginLeft="10dp"
+            />
+         <ImageView 
+             android:id="@+id/word_speak"
+             android:layout_width="20dp"
+             android:layout_height="20dp"
+             android:background="@drawable/speaker"
+             android:layout_marginTop="10dp"
+             android:layout_marginLeft="10dp"
+             android:layout_below="@id/word_self"/>
+         <ImageView 
+             android:id="@+id/word_collect"
+             android:layout_width="20dp"
+             android:layout_height="20dp"
+             android:background="@drawable/add_word"
+            android:layout_marginTop="10dp"
+             android:layout_marginLeft="40dp"
+             android:layout_toRightOf="@id/word_speak"
+             android:layout_below="@id/word_self"/>
+         
+         <ScrollView 
+             android:id="@+id/word_def_scroll"
+             android:layout_width="fill_parent"
+             android:layout_height="40dp"
+             android:layout_below="@id/word_speak"
+             android:layout_marginTop="10dp"
+             >
+           <TextView 
+             android:id="@+id/word_def"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:textSize="18sp"
+             android:textColor="#4d494d"
+            />
+             
+         </ScrollView>
+       
+         
+         <ImageView 
+             android:id="@+id/word_split_line"
+             android:layout_width="fill_parent"
+             android:layout_height="1dp"
+             android:background="@drawable/split_line_h"
+             android:layout_below="@id/word_def_scroll"
+             android:layout_marginTop="10dp"
+             />
+         <ScrollView 
+            android:id="@+id/word_example_scroll"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/word_split_line"
+            android:layout_above="@id/button_layout"
+            android:layout_marginTop="20dp"
+            >
+               <TextView 
+            	android:id="@+id/word_example"
+             	android:layout_width="wrap_content"
+           	 	android:layout_height="wrap_content"
+            	android:text=""
+           	 	android:textSize="18sp"
+           		android:textColor="#4d494d"
+           		android:lineSpacingExtra="3dp"
+           		android:lineSpacingMultiplier="1.2"
+           	 	/>
+             
+         </ScrollView>
+         
+    </RelativeLayout>
+    
+
+</LinearLayout>

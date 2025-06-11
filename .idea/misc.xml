@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/company/TravelAroundUS/lib/src/main/res/layout/activity_buy_iyubi.xml" value="0.38697916666666665" />
+        <entry key="..\:/company/TravelAroundUS/lib/src/main/res/layout/activity_buyiyubi.xml" value="0.38697916666666665" />
+        <entry key="..\:/company/TravelAroundUS/lib/src/main/res/layout/activity_buyvip.xml" value="0.38697916666666665" />
+        <entry key="..\:/company/TravelAroundUS/lib/src/main/res/layout/activity_search.xml" value="0.38697916666666665" />
+        <entry key="..\:/company/TravelAroundUS/lib/src/main/res/layout/activity_sentence_list.xml" value="0.38697916666666665" />
+        <entry key="..\:/company/TravelAroundUS/lib/src/main/res/layout/activity_vip_center_gold.xml" value="0.34444444444444444" />
+        <entry key="..\:/company/TravelAroundUS/lib/src/main/res/layout/audioplayer.xml" value="0.38697916666666665" />
+        <entry key="..\:/company/TravelAroundUS/lib/src/main/res/layout/discover_main.xml" value="0.3398148148148148" />
+        <entry key="..\:/company/TravelAroundUS/lib/src/main/res/layout/edituserinfo.xml" value="0.34629629629629627" />
+        <entry key="..\:/company/TravelAroundUS/lib/src/main/res/layout/item_answer.xml" value="0.38697916666666665" />
+        <entry key="..\:/company/TravelAroundUS/lib/src/main/res/layout/item_pay_method.xml" value="0.38697916666666665" />
+        <entry key="..\:/company/TravelAroundUS/lib/src/main/res/layout/lib_microclass_mobclass_video_base.xml" value="0.38697916666666665" />
+        <entry key="..\:/company/TravelAroundUS/lib/src/main/res/layout/login_layout.xml" value="0.34444444444444444" />
+        <entry key="..\:/company/TravelAroundUS/lib/src/main/res/layout/me_top.xml" value="0.38697916666666665" />
+        <entry key="..\:/company/TravelAroundUS/lib/src/main/res/layout/play_set.xml" value="0.38697916666666665" />
+        <entry key="..\:/company/TravelAroundUS/lib/src/main/res/layout/search_article_item.xml" value="0.38229166666666664" />
+        <entry key="..\:/company/TravelAroundUS/lib/src/main/res/layout/search_sentence_item.xml" value="0.38229166666666664" />
+        <entry key="..\:/company/TravelAroundUS/lib/src/main/res/layout/search_word_item.xml" value="0.38229166666666664" />
+        <entry key="..\:/company/TravelAroundUS/lib/src/main/res/layout/update_vip.xml" value="0.34444444444444444" />
+        <entry key="..\:/company/TravelAroundUS/travelAroundUS/src/main/res/drawable-ldpi/selector_btn_bg_front_trans.xml" value="0.1815" />
+        <entry key="..\:/company/TravelAroundUS/travelAroundUS/src/main/res/drawable-xxhdpi/playing_audio_comment.xml" value="0.209" />
+        <entry key="..\:/company/TravelAroundUS/travelAroundUS/src/main/res/drawable/green_bg.xml" value="0.1985" />
+        <entry key="..\:/company/TravelAroundUS/travelAroundUS/src/main/res/drawable/main_discover_press_layer_list.xml" value="0.209" />
+        <entry key="..\:/company/TravelAroundUS/travelAroundUS/src/main/res/drawable/main_home_layer_list.xml" value="0.209" />
+        <entry key="..\:/company/TravelAroundUS/travelAroundUS/src/main/res/drawable/main_small_layer_list.xml" value="0.209" />
+        <entry key="..\:/company/TravelAroundUS/travelAroundUS/src/main/res/drawable/main_small_press_layer_list.xml" value="0.209" />
+        <entry key="..\:/company/TravelAroundUS/travelAroundUS/src/main/res/drawable/multiple_fomer_bg.xml" value="0.1815" />
+        <entry key="..\:/company/TravelAroundUS/travelAroundUS/src/main/res/drawable/multiple_yellow_bg.xml" value="0.249" />
+        <entry key="..\:/company/TravelAroundUS/travelAroundUS/src/main/res/drawable/shape_btn_25_blue.xml" value="0.209" />
+        <entry key="..\:/company/TravelAroundUS/travelAroundUS/src/main/res/drawable/sign_bg.xml" value="0.2965" />
+        <entry key="..\:/company/TravelAroundUS/travelAroundUS/src/main/res/layout/activity_colloquial_circle.xml" value="0.38697916666666665" />
+        <entry key="..\:/company/TravelAroundUS/travelAroundUS/src/main/res/layout/activity_sign.xml" value="0.38697916666666665" />
+        <entry key="..\:/company/TravelAroundUS/travelAroundUS/src/main/res/layout/dialog_down_pdf.xml" value="0.38697916666666665" />
+        <entry key="..\:/company/TravelAroundUS/travelAroundUS/src/main/res/layout/dialog_privacy.xml" value="0.38697916666666665" />
+        <entry key="..\:/company/TravelAroundUS/travelAroundUS/src/main/res/layout/dialog_right_menu.xml" value="0.34444444444444444" />
+        <entry key="..\:/company/TravelAroundUS/travelAroundUS/src/main/res/layout/feedback.xml" value="0.38697916666666665" />
+        <entry key="..\:/company/TravelAroundUS/travelAroundUS/src/main/res/layout/fragment_langeuage.xml" value="0.34444444444444444" />
+        <entry key="..\:/company/TravelAroundUS/travelAroundUS/src/main/res/layout/fragment_layout_smallvideo.xml" value="0.38697916666666665" />
+        <entry key="..\:/company/TravelAroundUS/travelAroundUS/src/main/res/layout/fragment_layout_video.xml" value="0.38697916666666665" />
+        <entry key="..\:/company/TravelAroundUS/travelAroundUS/src/main/res/layout/fragment_my_colloquial_circle.xml" value="0.38697916666666665" />
+        <entry key="..\:/company/TravelAroundUS/travelAroundUS/src/main/res/layout/fragment_new_colloquial_circle.xml" value="0.38697916666666665" />
+        <entry key="..\:/company/TravelAroundUS/travelAroundUS/src/main/res/layout/intel_word_result.xml" value="0.34444444444444444" />
+        <entry key="..\:/company/TravelAroundUS/travelAroundUS/src/main/res/layout/item_colloquial_circle.xml" value="0.34444444444444444" />
+        <entry key="..\:/company/TravelAroundUS/travelAroundUS/src/main/res/layout/item_comment.xml" value="0.34444444444444444" />
+        <entry key="..\:/company/TravelAroundUS/travelAroundUS/src/main/res/layout/listitem_read.xml" value="0.3828125" />
+        <entry key="..\:/company/TravelAroundUS/travelAroundUS/src/main/res/layout/listitem_voa.xml" value="0.34444444444444444" />
+        <entry key="..\:/company/TravelAroundUS/travelAroundUS/src/main/res/layout/local_list.xml" value="0.34444444444444444" />
+        <entry key="..\:/company/TravelAroundUS/travelAroundUS/src/main/res/layout/main.xml" value="0.38697916666666665" />
+        <entry key="..\:/company/TravelAroundUS/travelAroundUS/src/main/res/layout/me_main.xml" value="0.3435185185185185" />
+        <entry key="..\:/company/TravelAroundUS/travelAroundUS/src/main/res/layout/multiple_choice.xml" value="0.38697916666666665" />
+        <entry key="..\:/company/TravelAroundUS/travelAroundUS/src/main/res/layout/pay_books.xml" value="0.34444444444444444" />
+        <entry key="..\:/company/TravelAroundUS/travelAroundUS/src/main/res/layout/read.xml" value="0.3351851851851852" />
+        <entry key="..\:/company/TravelAroundUS/travelAroundUS/src/main/res/layout/setting_main.xml" value="0.38697916666666665" />
+        <entry key="..\:/company/TravelAroundUS/travelAroundUS/src/main/res/layout/study.xml" value="0.34444444444444444" />
+        <entry key="..\:/company/TravelAroundUS/travelAroundUS/src/main/res/layout/text.xml" value="0.3287037037037037" />
+        <entry key="..\:/company/TravelAroundUS/travelAroundUS/src/main/res/layout/voa_exercise.xml" value="0.38697916666666665" />
+        <entry key="..\:/company/TravelAroundUS/travelAroundUS/src/main/res/layout/voa_list.xml" value="0.34444444444444444" />
+        <entry key="..\:/company/TravelAroundUS/travelAroundUS/src/main/res/layout/wordcard.xml" value="0.3398148148148148" />
+      </map>
+    </option>
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

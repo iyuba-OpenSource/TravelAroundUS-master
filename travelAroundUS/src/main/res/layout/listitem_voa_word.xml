@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/backlayout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/item_select" >
+    
+    <ImageView
+        android:id="@+id/word_speaker"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="3dp"
+        android:padding="10dp"
+        android:src="@drawable/speaker" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:descendantFocusability="blocksDescendants"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/word_key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_gravity="center_vertical"
+            android:textColor="#414141"
+            android:text="TextView"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/word_pron"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="160dp"
+            android:layout_marginTop="3dp"
+            android:textColor="#414141"
+            android:text="TextView"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/word_def"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/word_pron"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="10dp"
+            android:text="text"
+            android:textColor="#8B4513"
+            android:textSize="15sp" />
+        
+         <ImageView
+	        android:id="@+id/checkBox_isDelete"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:layout_alignParentRight="true"
+	        android:layout_margin="5dp"
+	        android:src="@android:drawable/checkbox_off_background"
+	        android:visibility="invisible" />
+    </RelativeLayout>
+
+</LinearLayout>

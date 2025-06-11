@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    xmlns:app="http://schemas.android.com/apk/lib/com.google.ads"
+    android:id="@+id/comment">
+    
+    
+	<ImageView
+        android:id="@+id/line"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentTop="true"
+        android:background="#dcdcdc" />
+
+    <ListView
+        android:id="@+id/list_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linear_express"
+        android:layout_below="@+id/line"
+        android:layout_margin="15dp"
+        android:cacheColorHint="#00000000"
+        android:divider="#dcdcdc"
+        android:dividerHeight="1dp"
+        android:fadingEdge="none"
+        android:focusable="true"
+        android:fastScrollEnabled="true" >
+    </ListView>
+    
+    <RelativeLayout
+        android:id="@+id/linear_express"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/comment_bkg_grey"
+        android:focusable="false"
+         >
+        
+        <ImageButton
+                android:id="@+id/setmode"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/chatting_setmode_keyboard_btn"
+                android:visibility="gone"
+            />
+        <Button
+            android:id="@+id/button_express"
+            android:layout_width="42dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:background="@drawable/comment_submit"
+            android:text="@string/send"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+        
+        <LinearLayout
+            android:id="@+id/voicebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/button_express"
+            android:layout_toRightOf="@id/setmode"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            >
+            <Button
+                android:id="@+id/press_speak"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:text="按住说话"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:padding="2dp"
+                android:background="@drawable/comment_speak"
+                android:gravity="center"
+                android:layout_gravity="center_vertical"
+               />
+            <Button
+                android:id="@+id/test_listen"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="试听"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/comment_speak"
+                android:gravity="center"
+                android:visibility="gone"
+                android:layout_gravity="center_vertical"
+               />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/edittext"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="12dp"
+            android:layout_toLeftOf="@id/button_express"
+            android:background="@drawable/border"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:visibility="visible" >
+            
+            <EditText
+                android:id="@+id/editText_express"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                 android:textColor="#000000"
+                android:background="#00000000"
+                android:textCursorDrawable="@null"
+                android:singleLine="true"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/voice_view"
+        android:layout_width="180dp"
+        android:layout_height="220dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/voice_bkg" 
+        android:visibility="visible"
+        >
+
+        <ImageView
+            android:id="@+id/mic_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/voice_rcd_hint" />
+
+        <ImageView
+            android:id="@+id/mic_value"
+            android:layout_toRightOf="@id/mic_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/amp1" />
+        
+        <TextView 
+            android:id="@+id/plsay"
+           android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="请讲话"
+            android:textColor="#FFFFFF" 
+            android:layout_alignParentBottom="true"
+            android:textSize="24dp"
+            android:gravity="center"
+            />'
+    </RelativeLayout>
+
+</RelativeLayout>

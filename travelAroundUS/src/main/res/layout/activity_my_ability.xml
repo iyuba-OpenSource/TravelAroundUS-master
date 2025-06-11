@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--<androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/app_color">
+
+                <ImageButton
+                    android:id="@+id/titlebar_back_button"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:background="@color/transparent"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/back_button" />
+
+                <TextView
+                    android:id="@+id/micro_class"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="智能化学习"
+                    android:textSize="18sp"
+                    android:shadowColor="#ff000000"
+                    android:shadowDx="3.0"
+                    android:shadowDy="3.0"
+                    android:shadowRadius="3.0"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#ffffff" />
+            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="@string/my_intel_test"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/shape_setting_panel_background"
+                android:orientation="vertical"
+                android:visibility="gone">
+                <RelativeLayout
+                    android:id="@+id/intel_ability_test"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp" >
+
+                    <ImageView
+                        android:id="@+id/im0"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/my_intel_test_logo" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="10dp"
+                        android:layout_toRightOf="@id/im0"
+                        android:drawablePadding="5dp"
+                        android:gravity="center"
+                        android:text="@string/my_intel_test"
+                        android:textColor="#444444"
+                        android:textSize="17sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/go" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="@string/my_intel_learning"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/shape_setting_panel_background"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/intel_userinfo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp" >
+
+                    <ImageView
+                        android:id="@+id/iv_mine_que_myque2"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/mine_intel_myinfo" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="10dp"
+                        android:layout_toRightOf="@id/iv_mine_que_myque2"
+                        android:drawablePadding="5dp"
+                        android:gravity="center"
+                        android:text="@string/userinfo_complete"
+                        android:textColor="#444444"
+                        android:textSize="17sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/go" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#dcdcdc" />
+
+                <RelativeLayout
+                    android:id="@+id/intel_goal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp" >
+
+                    <ImageView
+                        android:id="@+id/iv_mine_que_myque3"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/mine_intel_goal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="10dp"
+                        android:layout_toRightOf="@id/iv_mine_que_myque3"
+                        android:drawablePadding="5dp"
+                        android:gravity="center"
+                        android:text="@string/intel_learning_goal"
+                        android:textColor="#444444"
+                        android:textSize="17sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/go" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#dcdcdc" />
+
+                <RelativeLayout
+                    android:id="@+id/intel_result"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" >
+
+                    <ImageView
+                        android:id="@+id/iv_mine_que_myque4"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/mine_intel_result" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="10dp"
+                        android:layout_toRightOf="@id/iv_mine_que_myque4"
+                        android:drawablePadding="5dp"
+                        android:gravity="center"
+                        android:text="@string/intel_learning_result"
+                        android:textColor="#444444"
+                        android:textSize="17sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/go" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#dcdcdc" />
+
+                <RelativeLayout
+                    android:id="@+id/intel_test_result"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp" >
+
+                    <ImageView
+                        android:id="@+id/iv_mine_que_myque5"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/mine_intel_test" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="10dp"
+                        android:layout_toRightOf="@id/iv_mine_que_myque5"
+                        android:drawablePadding="5dp"
+                        android:gravity="center"
+                        android:text="@string/intel_test_result"
+                        android:textColor="#444444"
+                        android:textSize="17sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/go" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#dcdcdc" />
+
+                <RelativeLayout
+                    android:id="@+id/intel_word_result"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp" >
+
+                    <ImageView
+                        android:id="@+id/iv_mine_que_myque6"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/mine_intel_word" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="10dp"
+                        android:layout_toRightOf="@id/iv_mine_que_myque6"
+                        android:drawablePadding="5dp"
+                        android:gravity="center"
+                        android:text="@string/intel_word_result"
+                        android:textColor="#444444"
+                        android:textSize="17sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/go" />
+                </RelativeLayout>
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/discover_textt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="@string/discover_question"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:id="@+id/discover_allt2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/shape_setting_panel_background"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/discover_rqlist"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="10dp"
+                        android:drawableLeft="@drawable/p_searchfriends"
+                        android:drawablePadding="5dp"
+                        android:gravity="center"
+                        android:text="@string/discover_qlist"
+                        android:textColor="#444444"
+                        android:textSize="17sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/go" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/discover_myq"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp" >
+
+                    <ImageView
+                        android:id="@+id/iv_mine_que_myquee"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/mine_que_myque" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="10dp"
+                        android:layout_toRightOf="@id/iv_mine_que_myquee"
+                        android:drawablePadding="5dp"
+                        android:gravity="center"
+                        android:text="@string/discover_myques"
+                        android:textColor="#444444"
+                        android:textSize="17sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/go" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/discover_mysub"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:visibility="gone" >
+
+                    <ImageView
+                        android:id="@+id/iv_mine_que_myque"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/mine_que_myque" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="10dp"
+                        android:layout_toRightOf="@id/iv_mine_que_myque"
+                        android:drawablePadding="5dp"
+                        android:gravity="center"
+                        android:text="@string/discover_mysubq"
+                        android:textColor="#444444"
+                        android:textSize="17sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/go" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#dcdcdc" />
+
+                <RelativeLayout
+                    android:id="@+id/discover_qnotice"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp" >
+
+                    <ImageView
+                        android:id="@+id/iv_mine_que_notification"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/mine_que_notification" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="10dp"
+                        android:layout_toRightOf="@id/iv_mine_que_notification"
+                        android:drawablePadding="5dp"
+                        android:gravity="center"
+                        android:text="@string/discover_qnt"
+                        android:textColor="#444444"
+                        android:textSize="17sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/go" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#dcdcdc" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>-->
+</LinearLayout>

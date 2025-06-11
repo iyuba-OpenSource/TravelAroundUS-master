@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:roundProgress="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/backlayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/itemLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/item_shape_10">
+
+        <ImageView
+            android:id="@+id/checkBox_isDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:src="@android:drawable/checkbox_off_background"
+            android:visibility="gone" />
+
+        <!--底部的item数据-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/r1"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="14dp"
+            android:layout_marginEnd="12dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/rl_act1"
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/ic_act_bg_white"
+                android:gravity="center_horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/rl_download_act1"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_toRightOf="@id/tv_act1"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:id="@+id/iv_download_act1"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_download_blue"
+                        android:visibility="visible" />
+
+                    <com.iyuba.core.common.widget.RoundProgressBar
+                        android:id="@+id/rp_download_act1"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerInParent="true"
+                        android:visibility="visible"
+                        roundProgress:circleColor="#f5f5f5"
+                        roundProgress:circleProgressColor="@color/green"
+                        roundProgress:circleWidth="2dp"
+                        roundProgress:textColor="#9A32CD"
+                        roundProgress:textIsDisplayable="false" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_act1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="5dp"
+                    android:text="ACT1"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/sp_14" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_act2"
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/ic_act_bg_white"
+                android:gravity="center_horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/rl_download_act2"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_toRightOf="@id/tv_act2"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:id="@+id/iv_download_act2"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_download_blue"
+                        android:visibility="visible" />
+
+                    <com.iyuba.core.common.widget.RoundProgressBar
+                        android:id="@+id/rp_download_act2"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerInParent="true"
+                        android:visibility="visible"
+                        roundProgress:circleColor="#f5f5f5"
+                        roundProgress:circleProgressColor="@color/green"
+                        roundProgress:circleWidth="2dp"
+                        roundProgress:textColor="#9A32CD"
+                        roundProgress:textIsDisplayable="false" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_act2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="5dp"
+                    android:text="ACT2"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/sp_14" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_act3"
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/ic_act_bg_white"
+                android:gravity="center_horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/rl_download_act3"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_toEndOf="@id/tv_act3"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:id="@+id/iv_download_act3"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_download_blue"
+                        android:visibility="visible" />
+
+                    <com.iyuba.core.common.widget.RoundProgressBar
+                        android:id="@+id/rp_download_act3"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerInParent="true"
+                        android:visibility="visible"
+                        roundProgress:circleColor="#f5f5f5"
+                        roundProgress:circleProgressColor="@color/green"
+                        roundProgress:circleWidth="2dp"
+                        roundProgress:textColor="#9A32CD"
+                        roundProgress:textIsDisplayable="false" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_act3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="5dp"
+                    android:text="ACT3"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/sp_14" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <!--上边的内容显示-->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/r1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="beforeDescendants">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2">
+                <ImageView
+                    android:id="@+id/iv_pic"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/ic_test_1" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical">
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_index"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2."
+                        android:textColor="#333333"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:text="46 Linden Street"
+                        android:ellipsize="end"
+                        android:textColor="#333333"
+                        android:textStyle="bold" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+                <TextView
+                    android:id="@+id/tv_titleCn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:maxLines="1"
+                    android:text="林等大街46号"
+                    android:textColor="#333333"
+                    android:textSize="13sp" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="2">
+
+                <TextView
+                    android:id="@+id/tv_summary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:background="@drawable/shape_btn_25_blue"
+                    android:paddingVertical="5dp"
+                    android:paddingHorizontal="4dp"
+                    android:text="Summary"
+                    android:textColor="@color/white"/>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            <TextView
+                android:id="@+id/voa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="5dp"
+                android:text="EPISODE"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.LanguageFragment">
+
+    <ListView
+        android:id="@+id/annotation_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="#00000000"
+        android:divider="#dcdcdc"
+        android:dividerHeight="1dp" >
+    </ListView>
+
+    <RelativeLayout
+        android:id="@+id/no_annotation_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:paddingBottom="15dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/sorry_face"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/no_test" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sorry_face"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="本篇没有关键句型或网络无法访问"
+            android:textColor="#414141"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</FrameLayout>

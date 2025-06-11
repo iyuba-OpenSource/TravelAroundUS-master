@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/backlayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/titlebar"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary" >
+         <!--@drawable/titlebar_lightgray_bg-->
+        <Button
+            android:id="@+id/button_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back_button" />
+
+        <ImageView
+            android:id="@+id/study_line1"
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/button_back"
+            android:background="@drawable/line_shape" />
+
+        <TextView
+            android:id="@+id/study_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/study_line1"
+            android:gravity="center"
+            android:shadowColor="#ff000000"
+            android:shadowDx="1.0"
+            android:shadowDy="1.0"
+            android:shadowRadius="3.0"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/whitesmoke"
+            android:textSize="20sp"
+            tools:text="3-1 Grandpa's Trunk ACT1" />
+
+        <Button
+            android:id="@+id/right_menu"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_4"
+            android:background="@drawable/right_menu" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        <LinearLayout
+            android:id="@+id/l1_select"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            >
+
+            <TextView
+                android:id="@+id/voa_button_text"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical|center_horizontal|center"
+                android:layout_weight="1"
+                android:background="@drawable/voa_tab"
+                android:gravity="center"
+                android:text="@string/voa_text"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/voa_button_reRead"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical|center_horizontal|center"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:shadowRadius="3.0"
+                android:text="@string/voa_reRead"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:background="@drawable/voa_tab"/>
+
+            <TextView
+                android:id="@+id/voa_rank"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical|center_horizontal|center"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:shadowRadius="3.0"
+                android:text="@string/voa_rank"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:background="@drawable/voa_tab"/>
+                        
+            <TextView
+                android:id="@+id/voa_button_knowledge"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical|center_horizontal|center"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/voa_knowledge"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:background="@drawable/voa_tab"/>
+
+            <TextView
+                android:id="@+id/voa_button_exercise"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical|center_horizontal|center"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/voa_exercise"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:background="@drawable/voa_tab"/>
+
+            <TextView
+                android:id="@+id/voa_button_remark"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical|center_horizontal|center"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:shadowRadius="3.0"
+                android:text="@string/voa_remark"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:background="@drawable/voa_tab"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/mainBody"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:measureAllChildren="true" />
+
+        <com.iyuba.concept2.widget.WordCard
+            android:id="@+id/word"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="50dp" />
+        
+        <com.iyuba.core.common.widget.ContextMenu
+            android:id="@+id/context_menu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/adViewParent"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:visibility="gone"
+        >
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/da_meng_ad_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        >
+       <!-- <com.addam.library.api.AddamBanner
+            android:id="@+id/banner_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+        </com.addam.library.api.AddamBanner>-->
+
+    </RelativeLayout>
+   <!-- <com.google.android.gms.ads.AdView
+        android:id="@+id/ad_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-0386301933791128/5885385113"
+        android:visibility="gone"/>-->
+
+</LinearLayout>

@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/app_color">
+
+            <ImageButton
+                android:id="@+id/titlebar_back_button"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@color/transparent"
+                android:scaleType="centerInside"
+                android:src="@drawable/back_button" />
+
+            <TextView
+                android:id="@+id/book"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25dp"
+                android:layout_toLeftOf="@+id/micro_class"
+                android:shadowColor="#ff000000"
+                android:shadowDx="3.0"
+                android:shadowDy="3.0"
+                android:shadowRadius="3.0"
+                android:text="图书"
+                android:textSize="18sp"
+                android:layout_centerVertical="true"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/micro_class"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="微课"
+                android:textSize="18sp"
+                android:shadowColor="#ff000000"
+                android:shadowDx="3.0"
+                android:shadowDy="3.0"
+                android:shadowRadius="3.0"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/app"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="25dp"
+                android:layout_toRightOf="@+id/micro_class"
+                android:text="APP"
+                android:textSize="18sp"
+                android:shadowColor="#ff000000"
+                android:shadowDx="3.0"
+                android:shadowDy="3.0"
+                android:shadowRadius="3.0"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#ffffff" />
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:id="@+id/book_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="5dp">
+
+                <ImageView
+                    android:id="@+id/edit_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true" />
+
+                <TextView
+                    android:id="@+id/edit_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:text="全媒体六级图书+英语六级听力app"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/total_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="¥199"
+                        android:textColor="@color/red" />
+
+                    <TextView
+                        android:id="@+id/origin_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="¥300"
+                        android:textColor="#aaaaaa" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp">
+
+                    <TextView
+                        android:id="@+id/courier_fee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="快递:15元"
+                        android:textColor="#aaaaaa" />
+
+                    <TextView
+                        android:id="@+id/sales_volume"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="销量:1000"
+                        android:textColor="#aaaaaa" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/book_introduction"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:drawableLeft="@drawable/qing_rectangle"
+                    android:gravity="center_vertical"
+                    android:text=" 图书介绍"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="书名:"
+                        android:textColor="#16c2c6" />
+
+                    <TextView
+                        android:id="@+id/book_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="大学英语六级听力"
+                        android:textColor="#555555" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="作者:"
+                        android:textColor="#16c2c6" />
+
+                    <TextView
+                        android:id="@+id/author_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="方振宇"
+                        android:textColor="#555555" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="出版社:"
+                        android:textColor="#16c2c6" />
+
+                    <TextView
+                        android:id="@+id/press_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="海豚出版社"
+                        android:textColor="#555555" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp"
+                    android:text="本书描述:"
+                    android:textColor="#16c2c6" />
+
+                <TextView
+                    android:id="@+id/desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="新题型大学英语六级真题精髓+标准预测+视频详解+词汇+听力+阅读"
+                    android:textColor="#555555" />
+
+                <ImageView
+                    android:id="@+id/content_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:adjustViewBounds="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp"
+                    android:text="本书内容介绍:"
+                    android:textColor="#16c2c6" />
+
+                <TextView
+                    android:id="@+id/content_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="100%新题型；手机扫码可直接听听力，同时附赠光盘和下载链接；配套视频，全部免费。"
+                    android:textColor="#555555" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp"
+                    android:text="作者介绍:"
+                    android:textColor="#16c2c6" />
+
+
+                <ImageView
+                    android:id="@+id/author_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true" />
+
+
+                <TextView
+                    android:id="@+id/micro_class_introduction"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:drawableLeft="@drawable/qing_rectangle"
+                    android:gravity="center_vertical"
+                    android:text=" 配置微课介绍"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/class_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true" />
+
+                <TextView
+                    android:id="@+id/app_introduction"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:drawableLeft="@drawable/qing_rectangle"
+                    android:gravity="center_vertical"
+                    android:text=" 配置应用介绍"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/app_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true" />
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/customer_service"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/customer_service"
+                    android:layout_margin="5dp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/shop_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/shop_cart"
+                    android:layout_margin="5dp"/>
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/add_goods"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#16c2c6"
+                android:gravity="center"
+                android:text="加入购物车"
+                android:textColor="@color/whitesmoke" />
+
+            <TextView
+                android:id="@+id/buy_now"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ff7a3f"
+                android:gravity="center"
+                android:text="立即购买"
+                android:textColor="@color/whitesmoke" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/back_ground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#90000000"
+        android:orientation="horizontal"
+        android:visibility="gone" />
+</RelativeLayout>

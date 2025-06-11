@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="context_menu_comment">
+        <item>回复当前选中项</item>
+        <item>他的个人主页</item>
+    </string-array>
+
+    <string-array name="test_list_icon">
+        <item>@drawable/ic_test_1</item>
+        <item>@drawable/ic_test_2</item>
+        <item>@drawable/ic_test_3</item>
+        <item>@drawable/ic_test_4</item>
+        <item>@drawable/ic_test_5</item>
+        <item>@drawable/ic_test_6</item>
+        <item>@drawable/ic_test_7</item>
+    </string-array>
+</resources>

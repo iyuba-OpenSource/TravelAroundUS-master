@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:roundProgress="http://schemas.android.com/apk/res-auto"
+    android:layout_width="130dp"
+    android:layout_height="130dp"
+    android:background="@drawable/book_unchoose_back" >
+    
+    <RelativeLayout
+        android:id="@+id/download"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:padding="5dp" >
+
+        <RelativeLayout
+            android:id="@+id/download_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+             >
+            <com.iyuba.core.common.widget.RoundProgressBar
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/roundBar1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/download"
+                android:visibility="visible"
+                roundProgress:circleColor="#655373"
+                roundProgress:circleProgressColor="@color/blue"
+                roundProgress:circleWidth="4dip"
+                roundProgress:textIsDisplayable="false"
+                roundProgress:textColor="#9A32CD"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/image_downloaded"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/downloaded"
+            android:visibility="gone" />
+    </RelativeLayout>
+    
+    <TextView
+        android:id="@+id/download_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/download"
+        android:layout_centerHorizontal="true"
+        android:text="12/72"
+        android:textSize="18sp"
+        android:textColor="#655373" />
+    
+    <TextView
+        android:id="@+id/book_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/download_num"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="3dp"
+        android:text="新概念第一册"
+        android:textSize="16sp"
+        android:textColor="#77695C" />
+</RelativeLayout>

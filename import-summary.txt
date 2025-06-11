@@ -1,0 +1,264 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Manifest Merging:
+-----------------
+Your project uses libraries that provide manifests, and your Eclipse
+project did not explicitly turn on manifest merging. In Android Gradle
+projects, manifests are always merged (meaning that contents from your
+libraries' manifests will be merged into the app manifest. If you had
+manually copied contents from library manifests into your app manifest
+you may need to remove these for the app to build correctly.
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+From HeadNewsLib:
+* proguard-project.txt
+From MobCommonLibraries:
+* ic_launcher-web.png
+* proguard-project.txt
+From MultiThreadDownloader:
+* proguard.cfg
+From NewConceptEnglish:
+* README.md
+* WebContent\
+* WebContent\META-INF\
+* WebContent\META-INF\MANIFEST.MF
+* WebContent\WEB-INF\
+* WebContent\WEB-INF\lib\
+* WebContent\WEB-INF\lib\antlr-2.7.6.jar
+* WebContent\WEB-INF\lib\aspectjlib.jar
+* WebContent\WEB-INF\lib\aspectjrt.jar
+* WebContent\WEB-INF\lib\aspectjtools.jar
+* WebContent\WEB-INF\lib\aspectjweaver.jar
+* WebContent\WEB-INF\lib\c3p0-0.9.1.2.jar
+* WebContent\WEB-INF\lib\cglib-nodep-2.1_3.jar
+* WebContent\WEB-INF\lib\commons-beanutils-1.7.0.jar
+* WebContent\WEB-INF\lib\commons-collections-3.1.jar
+* WebContent\WEB-INF\lib\commons-collections.jar
+* WebContent\WEB-INF\lib\commons-fileupload-1.2.1.jar
+* WebContent\WEB-INF\lib\commons-fileupload-1.2.2.jar
+* WebContent\WEB-INF\lib\commons-httpclient-3.1.jar
+* WebContent\WEB-INF\lib\commons-io-1.1.jar
+* WebContent\WEB-INF\lib\commons-io-2.0.1.jar
+* WebContent\WEB-INF\lib\commons-lang-2.4.jar
+* WebContent\WEB-INF\lib\commons-lang-2.6.jar
+* WebContent\WEB-INF\lib\commons-lang3-3.1.jar
+* WebContent\WEB-INF\lib\commons-logging-1.0.4.jar
+* WebContent\WEB-INF\lib\commons-logging-1.1.jar
+* WebContent\WEB-INF\lib\commons-logging-api-1.1.jar
+* WebContent\WEB-INF\lib\commons-pool-1.6.jar
+* WebContent\WEB-INF\lib\dom4j-1.6.1.jar
+* WebContent\WEB-INF\lib\dwr.jar
+* WebContent\WEB-INF\lib\ezmorph-1.0.3.jar
+* WebContent\WEB-INF\lib\freemarker-2.3.19.jar
+* WebContent\WEB-INF\lib\hibernate3.jar
+* WebContent\WEB-INF\lib\javassist-3.11.0.GA.jar
+* WebContent\WEB-INF\lib\javassist-3.7.ga.jar
+* WebContent\WEB-INF\lib\jedis-2.1.0.jar
+* WebContent\WEB-INF\lib\json-lib-2.4-jdk15.jar
+* WebContent\WEB-INF\lib\jstl-1.2-sources.jar
+* WebContent\WEB-INF\lib\jstl.jar
+* WebContent\WEB-INF\lib\jta.jar
+* WebContent\WEB-INF\lib\jxl.jar
+* WebContent\WEB-INF\lib\log4j-1.2.16.jar
+* WebContent\WEB-INF\lib\morph-1.1.1.jar
+* WebContent\WEB-INF\lib\mysql-connector-java-5.1.14-bin.jar
+* WebContent\WEB-INF\lib\ognl-3.0.5.jar
+* WebContent\WEB-INF\lib\proxool-0.9.1.jar
+* WebContent\WEB-INF\lib\proxool-cglib.jar
+* WebContent\WEB-INF\lib\spring.jar
+* WebContent\WEB-INF\lib\standard.jar
+* WebContent\WEB-INF\lib\struts2-core-2.3.4.1.jar
+* WebContent\WEB-INF\lib\struts2-core-2.3.4.jar
+* WebContent\WEB-INF\lib\struts2-json-plugin-2.3.4.jar
+* WebContent\WEB-INF\lib\xwork-core-2.3.4.1.jar
+* WebContent\WEB-INF\lib\xwork-core-2.3.4.jar
+* WebContent\WEB-INF\web.xml
+* WebContent\index.jsp
+* WebContent\order.jsp
+* ic_launcher-web.png
+* proguard-project.txt
+From OneKeyShareNew:
+* build.xml
+* proguard-project.txt
+From PullToRefresh-library:
+* LICENSE
+* build.gradle
+* pom.xml
+From SMSSDK:
+* proguard-project.txt
+From ShareSDK:
+* build.xml
+* proguard-project.txt
+From SlidingMenuLibrary:
+* LICENSE.txt
+* build.gradle
+* library.iml
+* pom.xml
+From concept_configation:
+* ic_launcher-web.png
+* proguard-project.txt
+From http233:
+* proguard-project.txt
+From lib:
+* .gitignore
+* proguard-project.txt
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+gson-2.5.jar => com.google.code.gson:gson:2.5
+
+Potentially Missing Dependency:
+-------------------------------
+When we replaced the following .jar files with a Gradle dependency, we
+inferred the dependency version number from the filename. This
+specific version may not actually be available from the repository.
+If you get a build error stating that the dependency is missing, edit
+the version number to for example "+" to pick up the latest version
+instead. (This may require you to update your code if the library APIs
+have changed.)
+
+gson-2.5.jar => version 2.5 in com.google.code.gson:gson:2.5
+
+Replaced Libraries with Dependencies:
+-------------------------------------
+The importer recognized the following library projects as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the source files in your project were of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the library replacement in the import wizard and try
+again:
+
+actionbarsherlock =>
+    com.actionbarsherlock:actionbarsherlock:4.4.0@aar
+    com.android.support:support-v4:19.1.0
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+In MobCommonLibraries:
+* AndroidManifest.xml => mobCommonLibraries\src\main\AndroidManifest.xml
+* assets\ => mobCommonLibraries\src\main\assets
+* libs\MobCommons-2016.0303.1229.jar => mobCommonLibraries\libs\MobCommons-2016.0303.1229.jar
+* libs\MobTools-2016.0303.1229.jar => mobCommonLibraries\libs\MobTools-2016.0303.1229.jar
+* res\ => mobCommonLibraries\src\main\res\
+* src\ => mobCommonLibraries\src\main\java\
+In MultiThreadDownloader:
+* AndroidManifest.xml => multiThreadDownloader\src\main\AndroidManifest.xml
+* assets\ => multiThreadDownloader\src\main\assets
+* res\ => multiThreadDownloader\src\main\res
+* src\ => multiThreadDownloader\src\main\java\
+In OneKeyShareNew:
+* AndroidManifest.xml => oneKeyShareNew\src\main\AndroidManifest.xml
+* assets\ => oneKeyShareNew\src\main\assets
+* res\ => oneKeyShareNew\src\main\res\
+* src\ => oneKeyShareNew\src\main\java\
+In PullToRefresh-library:
+* AndroidManifest.xml => pullToRefreshlibrary\src\main\AndroidManifest.xml
+* assets\ => pullToRefreshlibrary\src\main\assets
+* res\ => pullToRefreshlibrary\src\main\res\
+* src\ => pullToRefreshlibrary\src\main\java\
+In HeadNewsLib:
+* AndroidManifest.xml => headNewsLib\src\main\AndroidManifest.xml
+* assets\ => headNewsLib\src\main\assets
+* libs\universal-image-loader-1.9.4.jar => headNewsLib\libs\universal-image-loader-1.9.4.jar
+* libs\youdaosdk-3.7.2.jar => headNewsLib\libs\youdaosdk-3.7.2.jar
+* lint.xml => headNewsLib\lint.xml
+* res\ => headNewsLib\src\main\res\
+* src\ => headNewsLib\src\main\java\
+In SMSSDK:
+* AndroidManifest.xml => sMSSDK\src\main\AndroidManifest.xml
+* assets\ => sMSSDK\src\main\assets
+* libs\SMSSDK-2.0.2.jar => sMSSDK\libs\SMSSDK-2.0.2.jar
+* res\ => sMSSDK\src\main\res\
+* src\ => sMSSDK\src\main\java
+In ShareSDK:
+* AndroidManifest.xml => shareSDK\src\main\AndroidManifest.xml
+* assets\ => shareSDK\src\main\assets
+* core\ => shareSDK\src\main\java
+* libs\ShareSDK-Core-2.7.0.jar => shareSDK\libs\ShareSDK-Core-2.7.0.jar
+* libs\ShareSDK-QQ-2.7.0.jar => shareSDK\libs\ShareSDK-QQ-2.7.0.jar
+* libs\ShareSDK-QZone-2.7.0.jar => shareSDK\libs\ShareSDK-QZone-2.7.0.jar
+* libs\ShareSDK-SinaWeibo-2.7.0.jar => shareSDK\libs\ShareSDK-SinaWeibo-2.7.0.jar
+* libs\ShareSDK-Wechat-2.7.0.jar => shareSDK\libs\ShareSDK-Wechat-2.7.0.jar
+* libs\ShareSDK-Wechat-Core-2.7.0.jar => shareSDK\libs\ShareSDK-Wechat-Core-2.7.0.jar
+* libs\ShareSDK-Wechat-Favorite-2.7.0.jar => shareSDK\libs\ShareSDK-Wechat-Favorite-2.7.0.jar
+* libs\ShareSDK-Wechat-Moments-2.7.0.jar => shareSDK\libs\ShareSDK-Wechat-Moments-2.7.0.jar
+* res\ => shareSDK\src\main\res\
+* src\ => shareSDK\src\main\java
+In SlidingMenuLibrary:
+* AndroidManifest.xml => slidingMenuLibrary\src\main\AndroidManifest.xml
+* assets\ => slidingMenuLibrary\src\main\assets
+* lint.xml => slidingMenuLibrary\lint.xml
+* res\ => slidingMenuLibrary\src\main\res\
+* src\ => slidingMenuLibrary\src\main\java\
+In concept_configation:
+* AndroidManifest.xml => concept_configation\src\main\AndroidManifest.xml
+* assets\ => concept_configation\src\main\assets
+* lint.xml => concept_configation\lint.xml
+* res\ => concept_configation\src\main\res\
+* src\ => concept_configation\src\main\java\
+In http233:
+* AndroidManifest.xml => http233\src\main\AndroidManifest.xml
+* assets\ => http233\src\main\assets
+* res\ => http233\src\main\res
+* src\ => http233\src\main\java\
+In wheel:
+* AndroidManifest.xml => wheel\src\main\AndroidManifest.xml
+* assets\ => wheel\src\main\assets
+* res\ => wheel\src\main\res\
+* src\ => wheel\src\main\java\
+In lib:
+* AndroidManifest.xml => lib\src\main\AndroidManifest.xml
+* assets\ => lib\src\main\assets\
+* libs\youdaosdk-3.7.2.jar => lib\libs\youdaosdk-3.7.2.jar
+* lint.xml => lib\lint.xml
+* res\ => lib\src\main\res\
+* src\ => lib\src\main\java\
+In NewConceptEnglish:
+* AndroidManifest.xml => newConceptEnglish\src\main\AndroidManifest.xml
+* assets\ => newConceptEnglish\src\main\assets\
+* libs\arm64-v8a\libmsc.so => newConceptEnglish\src\main\jniLibs\arm64-v8a\libmsc.so
+* libs\armeabi-v7a\libmsc.so => newConceptEnglish\src\main\jniLibs\armeabi-v7a\libmsc.so
+* libs\armeabi\libmsc.so => newConceptEnglish\src\main\jniLibs\armeabi\libmsc.so
+* libs\mips64\libmsc.so => newConceptEnglish\src\main\jniLibs\mips64\libmsc.so
+* libs\mips\libmsc.so => newConceptEnglish\src\main\jniLibs\mips\libmsc.so
+* libs\Msc.jar => newConceptEnglish\libs\Msc.jar
+* libs\Sunflower.jar => newConceptEnglish\libs\Sunflower.jar
+* libs\x86\libmsc.so => newConceptEnglish\src\main\jniLibs\x86\libmsc.so
+* libs\x86_64\libmsc.so => newConceptEnglish\src\main\jniLibs\x86_64\libmsc.so
+* lint.xml => newConceptEnglish\lint.xml
+* res\ => newConceptEnglish\src\main\res\
+* src\ => newConceptEnglish\src\main\java\
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

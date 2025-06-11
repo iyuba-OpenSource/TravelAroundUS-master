@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+
+    <ImageButton
+        android:id="@+id/btn_nav_sub"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/selector_btn_bg_front_trans"
+        android:src="@drawable/btn_titlebar_back_red" />
+
+    <TextView
+        android:id="@+id/tv_titlebar_sub"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="50dp"
+        android:gravity="center"
+        android:text="我的走遍美国英语能力图谱"
+        android:textColor="@color/ability_test_red"
+        android:textSize="15sp" />
+
+</LinearLayout>
+

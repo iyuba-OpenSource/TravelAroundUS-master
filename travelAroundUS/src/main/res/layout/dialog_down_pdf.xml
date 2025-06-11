@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dp_10"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/tv_bilingual_pdf"
+        android:layout_width="80dp"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="双语pdf"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_english_pdf"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/dp_10"
+        android:text="英文pdf"
+        android:textSize="18sp" />
+</androidx.appcompat.widget.LinearLayoutCompat>

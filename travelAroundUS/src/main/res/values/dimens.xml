@@ -1,0 +1,7 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <!-- 自定义背景图圆角度数 -->
+    <dimen name="corner">10dp</dimen>
+    <dimen name="stroke_line">0.5dp</dimen>
+</resources>

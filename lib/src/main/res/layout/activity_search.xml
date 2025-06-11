@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_title_and_edit"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:background="@color/colorPrimary">
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/lib_back_button" />
+
+        <EditText
+            android:id="@+id/et_input"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@id/btn_back"
+            android:background="@drawable/shape_search_edit_bg"
+            android:hint="请输入查询内容"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:imeOptions="actionSearch"/>
+
+        <ImageButton
+            android:id="@+id/ib_delete_edit"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:padding="5dp"
+            android:background="@null"
+            android:src="@drawable/word_clear_button" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_null_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="还没有任何搜索呦～"
+        android:layout_centerInParent="true"
+        android:textSize="15sp"
+        android:gravity="center_horizontal"
+        android:drawableTop="@drawable/ic_search_null_bg" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_search_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_title_and_edit" />
+
+</RelativeLayout>

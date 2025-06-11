@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/tv_questionid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="1.我的答案:"
+        android:textColor="#333333"
+        android:textSize="14sp" />
+
+
+    <TextView
+        android:id="@+id/tv_myanswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/tv_questionid"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="C"
+        android:textAllCaps="true"
+        android:textColor="#333333"
+        android:textSize="14sp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/tv_rightanswer"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="正解: "
+        android:textColor="#333333"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_rightanswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="B"
+        android:textAllCaps="true"
+        android:textColor="#0077f9"
+        android:textSize="14sp" />
+<!--F6B476-->
+
+</RelativeLayout>

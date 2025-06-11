@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp">
+
+        <ImageView
+            android:id="@+id/book_logo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/cloud_note" />
+
+        <TextView
+            android:id="@+id/book_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/book_logo"
+            android:layout_toRightOf="@+id/book_logo"
+            android:text="全媒体VOA新闻系列书+VOA慢速英语APP+VOA常速英语APP+VOA配套微课"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/book_now_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_toRightOf="@+id/book_logo"
+            android:text="¥249"
+            android:textColor="@color/red" />
+
+        <TextView
+            android:id="@+id/book_origin_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/book_now_price"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/book_now_price"
+            android:textColor="#cccccc"
+            android:text="500" />
+
+        <TextView
+            android:id="@+id/book_press"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/book_now_price"
+            android:layout_marginBottom="4dp"
+            android:layout_toRightOf="@+id/book_logo"
+            android:text="北京语言大学出版社"
+            android:textColor="#999999" />
+    </RelativeLayout>
+</LinearLayout>

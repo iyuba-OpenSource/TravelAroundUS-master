@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 评测部分按钮字体的颜色的点击背景 -->
+    <item android:color="@color/ability_test_red" />
+    <item android:color="@color/white" android:state_pressed="true"/>
+</selector>

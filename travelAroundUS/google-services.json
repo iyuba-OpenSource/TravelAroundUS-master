@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "688856043183",
+    "firebase_url": "https://newconceptenglish-c7d99.firebaseio.com",
+    "project_id": "newconceptenglish-c7d99",
+    "storage_bucket": "newconceptenglish-c7d99.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:688856043183:android:9d4ea6faaa809cc7",
+        "android_client_info": {
+          "package_name": "com.iyuba.American"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "688856043183-jdu2tqi5r8pe1n8pq6698v8g01ftku6o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbk6Otu_tsPR_Hw4iEQZS7CTszeFUG0co"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

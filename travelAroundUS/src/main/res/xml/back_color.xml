@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 用于主题界面显示的数据 -->
+<items>
+
+	<item>
+       <name>湖蓝</name>
+
+       <colorid>#8acfed</colorid>
+       </item>
+
+       <item>
+           <name>淡绿 </name>
+
+           <colorid>#c7edcc</colorid>
+       </item>
+       <item>
+           <name>银灰 </name>
+
+           <colorid>#e3e4e6</colorid>
+       </item>
+       <item>
+           <name>草绿</name>
+
+           <colorid>#a2f0a2</colorid>
+       </item>
+	<item>
+        <name>浅紫</name>
+
+        <colorid>#c7a9f1</colorid>
+    </item>
+    
+	<item>
+        <name>纯白</name>
+
+        <colorid>#ffffff</colorid>
+    </item>
+</items>

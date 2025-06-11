@@ -1,0 +1,2 @@
+具体各个平台的打包 查看主module下的 productFavor
+并根据七麦数据网 对照查看

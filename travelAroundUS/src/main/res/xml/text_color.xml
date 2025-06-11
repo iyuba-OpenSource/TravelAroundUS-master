@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 用于主题界面显示字体颜色的数据 -->
+<items>
+
+    <item>
+        <name>天空蓝</name>
+
+        <colorid>#2983c1</colorid>
+    </item>
+    <item>
+        <name>优雅紫</name>
+
+        <colorid>#b982ec</colorid>
+    </item>
+    <item>
+        <name>少女红</name>
+
+        <colorid>#ea3255</colorid>
+    </item>
+    <item>
+        <name>宁静绿</name>
+
+        <colorid>#1a8e35</colorid>
+    </item>
+    <item>
+        <name>纯洁蓝</name>
+
+        <colorid>#93e0ff</colorid>
+    </item>
+    <item>
+        <name>活力橙</name>
+
+        <colorid>#dc5712</colorid>
+    </item>
+    <item>
+        <name>自然绿</name>
+
+        <colorid>#638b0c</colorid>
+    </item>
+    <item>
+        <name>经典红</name>
+
+        <colorid>#9c3c5c</colorid>
+    </item>
+    <item>
+        <name>童趣黄 </name>
+
+        <colorid>#ffb902</colorid>
+    </item>
+
+</items>

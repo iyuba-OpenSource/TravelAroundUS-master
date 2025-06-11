@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF">
+
+    <ImageView
+        android:id="@+id/book_img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="10dp" />
+
+    <TextView
+        android:id="@+id/book_now_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/book_img"
+        android:layout_toRightOf="@id/book_img"
+        android:text="¥199"
+        android:textColor="@color/red" />
+
+    <TextView
+        android:id="@+id/content_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/book_now_price"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/book_img"
+        android:text="全媒体六级图书+六级听力" />
+
+    <TextView
+        android:id="@+id/confirm"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/book_img"
+        android:layout_marginTop="30dp"
+        android:background="#16c2c6"
+        android:gravity="center"
+        android:text="确 认"
+        android:textColor="@color/whitesmoke" />
+
+
+</RelativeLayout>

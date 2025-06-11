@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:background="#5dba52">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/time_used"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="20m30s"
+                    android:textColor="@color/whitesmoke"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="10dp"
+                    android:text="10m"
+                    android:textColor="@color/whitesmoke"
+                    android:textSize="10sp"
+                    android:id="@+id/intel_test_total_time" />
+
+                <ProgressBar
+                    android:id="@+id/w_ques_progress"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="250dp"
+                    android:layout_height="6dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="5dp"
+                    android:max="500"
+                    android:progress="500"
+                    android:progressDrawable="@drawable/progressbar_color2" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/write_ques"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:text="请选出与句中划线部分相符的单词或短语。 许多次我都想放弃，但我奋力坚持了下来。"
+                android:textColor="@color/whitesmoke" />
+
+            <com.iyuba.concept2.widget.RoundProgressBar
+                android:id="@+id/listen_ques_play"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/listen_ques_play"
+                android:clickable="true"
+                app:newCircleColor="#ffffff"
+                app:newCircleProgressColor="#87db76"
+                app:newCircleWidth="2dp"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/listen_answer_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="20sp"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/ans_w_A"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#fea523"
+                    android:gravity="center"
+                    android:text="A"
+                    android:textColor="@color/whitesmoke"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/A_w_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="10dp"
+                    android:text="The Internet is playing a more and more important part in our daily life."
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/ques_image_a"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ans_w_B"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#fea523"
+                    android:gravity="center"
+                    android:text="B"
+                    android:textColor="@color/whitesmoke"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/B_w_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="10dp"
+                    android:text="The Internet is playing a more and more important part in our daily life."
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/ques_image_b"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ans_w_C"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#fea523"
+                    android:gravity="center"
+                    android:text="C"
+                    android:textColor="@color/whitesmoke"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/C_w_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="10dp"
+                    android:text="The Internet is playing a more and more important part in our daily life."
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/ques_image_c"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ans_w_D"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#fea523"
+                    android:gravity="center"
+                    android:text="D"
+                    android:textColor="@color/whitesmoke"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/D_w_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="10dp"
+                    android:text="The Internet is playing a more and more important part in our daily life."
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/ques_image_d"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/listen_bottom_rectangle">
+
+
+        <TextView
+            android:id="@+id/ques_index"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="30dp"
+            android:gravity="center"
+            android:text="2/40"
+            android:textColor="#5dba52"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/next_w_ques"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:gravity="center"
+            android:text="next"
+            android:textColor="#fea523"
+            android:textSize="15sp" />
+    </RelativeLayout>
+</LinearLayout>

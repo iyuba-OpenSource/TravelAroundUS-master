@@ -1,0 +1,768 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary">
+        <!--FFB151-->
+
+        <Button
+            android:id="@+id/iv_back"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/lib_back_button"
+            android:clickable="true" />
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:shadowColor="#ff000000"
+            android:shadowDx="3.0"
+            android:shadowDy="3.0"
+            android:shadowRadius="3.0"
+            android:text="会员商店"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/btn_buyiyuba"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@color/transparent"
+            android:text="购买爱语币"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:visibility="gone"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/iv_head"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/head" />
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/iv_head"
+            android:text="当前用户:"
+            android:textColor="@color/gray"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/tv1"
+            android:text="iyuba"
+            android:textColor="@color/gray"
+            android:textSize="11sp" />
+
+        <ImageView
+            android:id="@+id/iv_iyucoin"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/tv_iyubi"
+            android:src="@drawable/iyucoin" />
+
+        <TextView
+            android:id="@+id/tv_iyubi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/tv_iyucoin"
+            android:text="语币余额:"
+            android:textColor="@color/gray"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_iyucoin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="35dp"
+            android:text="0"
+            android:textColor="@color/gray"
+            android:textSize="11sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.01dp"
+            android:layout_alignParentBottom="true"
+            android:background="#E0E0E0" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/image_head"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="10dp"
+                   />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/image_head"
+                    android:layout_alignTop="@+id/image_head"
+                    android:layout_toRightOf="@+id/image_head"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_user_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="名字"
+                        android:textColor="@color/gray"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/tv_aiyubi"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="aiyubi"
+                        android:textColor="@color/gray"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/tv_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="到期时间"
+                        android:textColor="@color/gray"
+                        android:textSize="13sp" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#F0F0F0">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:text="畅享爱语吧全站会员"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:id="@+id/tv_vip_html"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:text="(点击查看详情)"
+                        android:textColor="@color/red"
+                        android:textSize="13dp" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.01dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#E0E0E0" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <RelativeLayout
+                    android:id="@+id/rl01"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:text="走遍美国一年VIP     ¥99"
+                        android:textColor="@color/gray"
+                        android:textSize="13dp" />
+
+                    <Button
+                        android:id="@+id/rl_buyforevervip_12"
+                        android:layout_width="40dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:background="#5DB449"
+                        android:text="开通"
+                        android:textColor="@color/white"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0.01dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="#E0E0E0" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/rl0"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/rl01">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:text="走遍美国永久VIP     ¥199"
+                        android:textColor="@color/gray"
+                        android:textSize="13dp" />
+
+                    <Button
+                        android:id="@+id/rl_buyforevervip"
+                        android:layout_width="40dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:background="#5DB449"
+                        android:text="开通"
+                        android:textColor="@color/white"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0.01dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="#E0E0E0" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/rl2"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/rl0">
+
+                    <TextView
+                        android:id="@+id/tv3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:text="全站会员1个月     ¥30"
+                        android:textColor="@color/gray"
+                        android:textSize="13dp" />
+
+                    <Button
+                        android:id="@+id/btn_buyapp1"
+                        android:layout_width="40dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:background="#5DB449"
+                        android:text="开通"
+                        android:textColor="@color/white"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0.01dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="#E0E0E0" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl3"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/rl2">
+
+                    <TextView
+                        android:id="@+id/tv4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:text="全站会员3个月     ¥88"
+                        android:textColor="@color/gray"
+                        android:textSize="13dp" />
+
+                    <Button
+                        android:id="@+id/btn_buyapp2"
+                        android:layout_width="40dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:background="#5DB449"
+                        android:text="开通"
+                        android:textColor="@color/white"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0.01dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="#E0E0E0" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl4"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/rl3">
+
+                    <TextView
+                        android:id="@+id/tv5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:text="全站会员6个月     ¥158"
+                        android:textColor="@color/gray"
+                        android:textSize="13dp" />
+
+                    <Button
+                        android:id="@+id/btn_buyapp3"
+                        android:layout_width="40dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:background="#5DB449"
+                        android:text="开通"
+                        android:textColor="@color/white"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0.01dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="#E0E0E0" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl5"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/rl4">
+
+                    <TextView
+                        android:id="@+id/tv6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:text="全站会员12个月    ¥298"
+                        android:textColor="@color/gray"
+                        android:textSize="13dp" />
+
+
+                    <Button
+                        android:id="@+id/btn_buyapp4"
+                        android:layout_width="40dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:background="#5DB449"
+                        android:text="开通"
+                        android:textColor="@color/white"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0.01dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="#E0E0E0" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl6"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/rl5"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:text="全站会员36个月    ¥588"
+                        android:textColor="@color/gray"
+                        android:textSize="13dp" />
+
+                    <Button
+                        android:id="@+id/btn_buyapp5"
+                        android:layout_width="40dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:background="#5DB449"
+                        android:text="开通"
+                        android:textColor="@color/white"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0.01dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="#E0E0E0" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl7"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/rl6">
+
+                    <TextView
+                        android:id="@+id/tv9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:text="黄金会员1个月     ¥98"
+                        android:textColor="@color/gray"
+                        android:textSize="13dp" />
+
+                    <Button
+                        android:id="@+id/btn_buyapp6"
+                        android:layout_width="40dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:background="#5DB449"
+                        android:text="开通"
+                        android:textColor="@color/white"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0.01dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="#E0E0E0" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl8"
+                    android:layout_width="match_parent"
+                    android:visibility="gone"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/rl7">
+
+                    <TextView
+                        android:id="@+id/tv10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:text="黄金会员3个月     ¥288"
+                        android:textColor="@color/gray"
+                        android:textSize="13dp" />
+
+                    <Button
+                        android:id="@+id/btn_buyapp7"
+                        android:layout_width="40dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:background="#5DB449"
+                        android:text="开通"
+                        android:textColor="@color/white"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0.01dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="#E0E0E0" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:id="@+id/rl9"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/rl8">
+
+                    <TextView
+                        android:id="@+id/tv11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:text="黄金会员6个月     ¥518"
+                        android:textColor="@color/gray"
+                        android:textSize="13dp" />
+
+                    <Button
+                        android:id="@+id/btn_buyapp8"
+                        android:layout_width="40dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:background="#5DB449"
+                        android:text="开通"
+                        android:textColor="@color/white"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0.01dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="#E0E0E0" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl10"
+                    android:layout_width="match_parent"
+                    android:visibility="gone"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/rl9">
+
+                    <TextView
+                        android:id="@+id/tv12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:text="黄金会员12个月    ¥998"
+                        android:textColor="@color/gray"
+                        android:textSize="13dp" />
+
+                    <Button
+                        android:id="@+id/btn_buyapp9"
+                        android:layout_width="40dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:background="#5DB449"
+                        android:text="开通"
+                        android:textColor="@color/white"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0.01dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="#E0E0E0" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <TabHost
+                android:id="@+id/tabhost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical">
+
+                    <TabWidget
+                        android:id="@android:id/tabs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"></TabWidget>
+
+                    <FrameLayout
+                        android:id="@android:id/tabcontent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <com.iyuba.core.common.widget.MyGridView
+                            android:id="@+id/view1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:horizontalSpacing="0.0dp"
+                            android:listSelector="@null"
+                            android:numColumns="3"
+                            android:smoothScrollbar="true"
+                            android:stretchMode="columnWidth"
+                            android:verticalSpacing="0.0px" />
+
+                        <!--<com.iyuba.core.widget.MyGridView-->
+                        <!--android:id="@+id/view2"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:horizontalSpacing="0.0dp"-->
+                        <!--android:listSelector="@null"-->
+                        <!--android:numColumns="3"-->
+                        <!--android:smoothScrollbar="true"-->
+                        <!--android:stretchMode="columnWidth"-->
+                        <!--android:verticalSpacing="0.0px" />-->
+                        <TextView
+                            android:id="@+id/view2"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/tabback"
+                            android:padding="5dp"
+                            android:textColor="#919394"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/view3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/tabback"
+                            android:padding="5dp"
+                            android:textColor="#919394"
+                            android:textSize="16sp" />
+
+                        <!--<TextView-->
+                        <!--android:id="@+id/view2"-->
+                        <!--android:layout_width="fill_parent"-->
+                        <!--android:layout_height="fill_parent" />-->
+
+                        <!--<TextView-->
+                        <!--android:id="@+id/view3"-->
+                        <!--android:layout_width="fill_parent"-->
+                        <!--android:layout_height="fill_parent" />-->
+                    </FrameLayout>
+
+                </LinearLayout>
+            </TabHost>
+            <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="40dp" >-->
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:text="全站VIP特权(不含微课)"-->
+            <!--android:textSize="13dp" />-->
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="0.01dp"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:background="#E0E0E0" />-->
+            <!--</RelativeLayout>-->
+
+            <!--<com.iyuba.core.widget.MyGridView-->
+            <!--android:id="@+id/gv_tequan"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:horizontalSpacing="0.0dp"-->
+            <!--android:listSelector="@null"-->
+            <!--android:numColumns="3"-->
+            <!--android:smoothScrollbar="true"-->
+            <!--android:stretchMode="columnWidth"-->
+            <!--android:verticalSpacing="0.0px" />-->
+
+            <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginBottom="20dp"-->
+            <!--android:layout_marginTop="20dp">-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/tv7"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:text="30.0元获取永久VIP服务(仅限本应用)"-->
+            <!--android:textColor="#5DB449" />-->
+
+            <!--<RelativeLayout-->
+            <!--android:id="@+id/rl_buyforevervip"-->
+            <!--android:layout_width="200dp"-->
+            <!--android:layout_height="30dp"-->
+            <!--android:layout_below="@+id/tv7"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_marginTop="5dp"-->
+            <!--android:background="@color/theme_color"-->
+            <!--android:clickable="true">-->
+
+            <!--<ImageView-->
+            <!--android:id="@+id/iv1"-->
+            <!--android:layout_width="20dp"-->
+            <!--android:layout_height="20dp"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginLeft="5dp"-->
+            <!--android:src="@drawable/vip" />-->
+
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_toRightOf="@id/iv1"-->
+            <!--android:text="成为本应用永久VIP"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="15sp" />-->
+            <!--</RelativeLayout>-->
+            <!--</RelativeLayout>-->
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
